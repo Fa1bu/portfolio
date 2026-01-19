@@ -1,17 +1,69 @@
+
+/* Общие стили для всего документа */
 body {
-    font-family: sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
-}
-
-h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
     color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
 }
 
+/* Заголовок страницы */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+}
+
+/* Описание под заголовком */
+p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Секция с проектами */
 section {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.1);
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Заголовки проектов */
+h2 {
+    color: #2980b9;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+/* Описание проектов */
+section p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Ссылки внутри описаний */
+section p a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section p a:hover {
+    text-decoration: underline;
 }
