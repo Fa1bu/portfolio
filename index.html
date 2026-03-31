@@ -3,52 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое Портфолио</title>
+    <title>Портфолио | Белых Анастасия</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Добро пожаловать на мое портфолио</h1>
-    <p>Здесь вы найдете проекты Белых Анастасии Михайловны</p>
-    <section class="skills-container">
-    <h2>Мои навыки</h2>
-    <div class="skills-grid">
-        <span class="skill-tag">Python (Flask)</span>
-        <span class="skill-tag">SQLite / PostgreSQL</span>
-        <span class="skill-tag">HTML5 / CSS3</span>
-        <span class="skill-tag">Git / GitHub</span>
-        <span class="skill-tag">Telegram Bot API</span>
-        <span class="skill-tag">Разработка REST API</span>
-        <span class="skill-tag">Командная разработка</span>
-    </div>
-</section>
-    <section id="section1">
-        <h2>Password-generator</h2>
-        <p>Программа создания пароля из уникальных комбинаций символов для защиты ваших аккаунтов — 
-           <a href="https://github.com/Fa1bu/Password-generator" target="_blank">GitHub Репозиторий</a>
-        </p>
+
+    <header>
+        <h1>Белых Анастасия Михайловна</h1>
+        <p class="subtitle">Python-разработчик & Web-энтузиаст</p>
+    </header>
+
+    <!-- РАЗДЕЛ НАВЫКОВ -->
+    <section class="skills-section">
+        <h2 class="section-label">Технические навыки</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">Python (Flask)</span>
+            <span class="skill-tag">SQLite / PostgreSQL</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Telegram Bot API</span>
+            <span class="skill-tag">REST API</span>
+            <span class="skill-tag">Командная разработка</span>
+        </div>
     </section>
 
-    <section id="section2">
-        <h2>Flask Store</h2>
-        <p>Небольшой интернет-магазин на Flask с каталогом товаров, корзиной, избранным и системой заказов. 
-           Приложение использует SQLite и хранит изображения в static/uploads — 
-           <a href="https://github.com/Fa1bu/Shop" target="_blank">GitHub Репозиторий</a>
-        </p>
-    </section>
+    <div class="separator"></div>
 
-    <section id="section3">
-        <h2>Secret-Santa</h2>
-        <p>Этот проект представляет собой телеграм-бота для игры "Тайный Санта". Пользователи могут регистрироваться, 
-           создавать и присоединяться к играм, назначать Тайных Санта и угадывать их — 
-           <a href="https://github.com/firaya716/Secret-Santa" target="_blank">GitHub Репозиторий</a>
-        </p>
-    </section>
+    <!-- РАЗДЕЛ ПРОЕКТОВ -->
+    <main>
+        <h2 class="section-label">Мои проекты</h2>
+        <div class="projects-container">
+            
+            <section class="project-card" id="section1">
+                <h2>Password-generator</h2>
+                <p>Программа создания пароля из уникальных комбинаций символов для защиты ваших аккаунтов.</p>
+                <a href="https://github.com" target="_blank">GitHub Репозиторий</a>
+            </section>
 
-    <section id="section4"> <!-- Исправил ID на section4, так как он должен быть уникальным -->
-        <h2>ОдноКлассники+</h2>
-        <p>Командный проект под названием «ОдноКлассники+», являются социальной сетью — 
-           <a href="https://github.com/Maksik203/site-soc-ceti77" target="_blank">GitHub Репозиторий</a>
-        </p>
-    </section>
+            <section class="project-card" id="section2">
+                <h2>Flask Store</h2>
+                <p>Интернет-магазин на Flask с каталогом, корзиной и системой заказов. Использует SQLite и статичные медиа-файлы.</p>
+                <a href="https://github.com" target="_blank">GitHub Репозиторий</a>
+            </section>
+
+            <section class="project-card" id="section3">
+                <h2>Secret-Santa</h2>
+                <p>Телеграм-бот для игры "Тайный Санта": регистрация, создание групп и автоматическое распределение участников.</p>
+                <a href="https://github.com" target="_blank">GitHub Репозиторий</a>
+            </section>
+
+            <section class="project-card" id="section4">
+                <h2>ОдноКлассники+</h2>
+                <p>Командный проект социальной сети. Реализованы базовые функции взаимодействия пользователей.</p>
+                <a href="https://github.com" target="_blank">GitHub Репозиторий</a>
+            </section>
+
+        </div>
+    </main>
+
 </body>
 </html>
