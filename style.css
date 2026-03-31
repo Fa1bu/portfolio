@@ -1,69 +1,53 @@
-
-/* Общие стили для всего документа */
+/* Общие стили для страницы */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f4f8;
-    color: #333;
-    margin: 0;
-    padding: 20px;
     line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f4f7f6;
+    color: #333;
 }
 
-/* Заголовок страницы */
 h1 {
     text-align: center;
     color: #2c3e50;
-    margin-bottom: 30px;
-    font-size: 2.8rem;
 }
 
-/* Описание под заголовком */
-p {
-    max-width: 700px;
-    margin: 0 auto 40px;
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Секция с проектами */
+/* Стили для карточек проектов */
 section {
     background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(44, 62, 80, 0.1);
-    padding: 20px 25px;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-section:hover {
-    transform: translateY(-5px);
-}
-
-/* Заголовки проектов */
 h2 {
-    color: #2980b9;
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 1.8rem;
+    margin-top: 0;
+    color: #3498db;
 }
 
-/* Описание проектов */
-section p {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.5;
+/* Стилизация ссылок-кнопок */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
 }
 
-/* Ссылки внутри описаний */
-section p a {
-    color: #e67e22;
-    text-decoration: none;
-    font-weight: 600;
+/* Эффект при наведении */
+a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Кнопка слегка приподнимается */
 }
 
-section p a:hover {
-    text-decoration: underline;
+/* Эффект при нажатии */
+a:active {
+    transform: translateY(0);
 }
